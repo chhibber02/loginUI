@@ -1,7 +1,4 @@
-import 'dart:async';
-
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:login_new/services/auth_service.dart';
 import '../components/my_text_field.dart';
@@ -61,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
             title: Center(
               child: Text(
                 message,
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
               ),
             ),
           );
