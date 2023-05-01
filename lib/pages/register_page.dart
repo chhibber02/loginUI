@@ -1,7 +1,4 @@
-import 'dart:async';
-
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:login_new/services/auth_service.dart';
 import '../components/my_text_field.dart';
@@ -48,7 +45,7 @@ class _RegisterPageState extends State<RegisterPage> {
       //try sign in
       await FirebaseAuth.instance.createUserWithEmailAndPassword(
           email: emailController.text,
-          password: passController.text
+          password: passController.text,
       );
       Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
